@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <link rel="stylesheet" href="CSS File/index.css">
+</head>
+<body>
+    
+    <p>Student Registration Form</p>
+    <div id="regstration">
+        <form name="myform" id="form" class="form">
+            <div class="form-control">
+                <label for="username">UserName <span style="color: red;">*</span></label>
+                <input type="text" name="username" placeholder="UserName" value="" id="username"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Applicant's Full Name (As per Educational Documents) <span style="color: red;">*</span></label>
+                <input type="text" placeholder="Applicant's Full Name" value=""  id="applicantName" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Applicant's Email Address <span style="color: red;">*</span></label>
+                <input type="text" placeholder="Applicant's Email Address" value=""  id="applicantEmail" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Re-Enter Applicant's Email Address <span style="color: red;">*</span></label>
+                <input type="text" placeholder="Confirm Email Address" value=""  id="applicantEmailRe" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>         
+            <div class="form-control">
+                <label for="username">Password (Minimum 6 characters) <span style="color: red;">*</span></label>
+                <input type="password" placeholder="Password" value=""  id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div> 
+            <div class="form-control">
+                <label for="username">Re-Enter Password <span style="color: red;">*</span></label>
+                <input type="password" placeholder="Confirm Password" value=""  id="passwordRe" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div> 
+            <div class="form-control">
+                <label for="username">Mobile Number <span style="color: red;">*</span></label>
+                <input type="text" placeholder="10 Digit Mobile Number" value=""  id="mobile" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Re-Enter Mobile Number <span style="color: red;">*</span></label>
+                <input type="text" placeholder="10 Digit Mobile Number" value=""  id="mobileRe" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            
+            <button type="submit" id="btn1">Submit</button> 
+        </form>
+         
+    </div>
+    <script src="JS File/frm1.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="Calculator">
+		<div class="result">
+			<div class="history">
+				<p class="history-value"></p>
+			</div>
+			<div class="output">
+				<p class="output-value"></p>
+			</div>
+		</div>
+		<div class="keyboard">
+			<button class="operator clear">C</button>
+			<button class="operator backspace">CE</button>
+			<button class="operator %">%</button>
+			<button class="empty forward"><i class="fas fa-arrow-right"></i></button>
+			<div class="scientific_cal">
+				<button class="operator_s radian">Red</button>
+				<button class="operator_s sqrt"><i class="fas sqrt fa-square-root-alt"></i></button>
+				<button class="operator_s ln">ln</button>
+				<button class="operator_s backward"><i class="fas fa-arrow-left"></i></button>
+				<button class="operator_s sin">sin</button>
+				<button class="operator_s cos">cos</button>
+				<button class="operator_s tan">tan</button>
+				<button class="operator_s log_10">log</button>
+				<button class="operator_s 1/x">1/x</button>
+				<button class="operator_s x^2">x<sup>2</sup></button>
+				<button class="operator_s">(</button>
+				<button class="operator_s">)</button>
+				<button class="operator_s e^x">e<sup>x</sup></button>
+				<button class="operator_s x^x">x<sup>x</sup></button>
+				<button class="operator_s e">e</button>
+				<button class="operator_s |x|">|x|</button>
+				<button class="operator_s sinInverse">sin<sup>-1</sup></button>
+				<button class="operator_s cosInverse">cos<sup>-1</sup></button>
+				<button class="operator_s tanInverse">tan<sup>-1</sup></button>
+				<button class="operator_s 2^x">2<sup>x</sup></button>
+				<button class="operator_s x^3">x<sup>3</sup></button>
+				<button class="operator_s 2^x">2<sup>x</sup></button>
+				<button class="operator_s x!">x!</button>
+				<button class="operator_s pi"><img src="pi.png" class="imgpi" /></button>
+			</div>
+			<button class="operator /">&#247;</button>
+			
+			<button class="number 7" id="7">7</button>
+			<button class="number 8">8</button>
+			<button class="number 9">9</button>
+			<button class="operator *">&times;</button>
+
+			<button class="number 4">4</button>
+			<button class="number 5">5</button>
+			<button class="number 6">6</button>
+			<button class="operator -">-</button>
+
+			<button class="number 1">1</button>
+			<button class="number 2">2</button>
+			<button class="number 3">3</button>
+			<button class="operator +">+</button>
+
+			<button class="operator ." style="font-size: 30px; padding-bottom: 10px;">.</button>		
+			<button class="operator equal" style="color: red; font-size: 20px;">=</button>
+			<button class="number 0">0</button>			
+		</div>
+	</div>
+    <script src="index.js"></script>
+</body>
+</html>

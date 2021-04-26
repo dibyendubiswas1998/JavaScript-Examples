@@ -1,0 +1,136 @@
+
+#main_div{
+    height: 580px;
+    width: 94%;
+    background-color: rgb(247, 221, 183);
+    margin: 20px auto;
+}
+.div_tags h1{
+    text-align: center;
+    padding-top: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-control{
+    position: relative;
+    float: left;
+    margin-left: 22px;
+    margin-top: 30px;
+}
+.form-control input{
+    height: 26px;
+    width: 250px;
+    outline: none;
+    border: 2px solid rgb(24, 1, 129);
+    border-radius: 5px;
+}
+.form-control input[type=date]{
+    cursor: pointer;
+}
+.form-control small{
+    position: absolute;
+    left: 9px;
+    top: 34px;
+    color: red;
+    visibility: hidden;
+}
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.success input{
+    border-color:rgb(24, 1, 129);
+}
+::-webkit-input-placeholder {    
+    font-size: 14px;
+}
+.div_element input:focus{
+    border-color: rgb(9, 98, 1);
+}
+.form-control select{
+    height: 30px;
+    width: 257px;
+    outline: none;
+    border: 2px solid rgb(24, 1, 129);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+.form-control.error select{
+    border: 2px solid red;
+}
+.div_element select:focus{
+    border-color: rgb(9, 98, 1);
+}
+.form-control button{
+    height: 30px;
+    width: 107px;
+    margin-left: 1px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(160, 62, 252);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.div_element button:hover{
+    background-color: rgb(212, 2, 167);
+}
+.element_list{
+    height: 370px;
+    width: 98.3%;
+    margin-left: 22px;
+    margin-top: 110px;
+    overflow-y: scroll;
+}
+.segments{
+    height: 70px;
+    width: 99%;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 1px;
+}
+.list{
+    height: 35px;
+    width: 217px;
+    background-color: #fff;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.16);
+    border-radius: 5px;
+    float: left;
+    margin-right: 24px;
+}
+.list li{
+    list-style-type: none;
+    text-align: left;
+    padding-top: 9px;
+}
+.segments input{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 22px;
+    right: 52px;    
+    cursor: pointer;
+}
+.segments i{
+    font-size: 18px;
+    position: absolute;
+    top: 25px;
+    right: 18px;
+    cursor: pointer;
+}
+.checked1{
+    background: #e0e0e0 !important;
+}
+.checked2{
+    text-decoration: line-through !important;
+    color: red;
+}
+
+#delete:hover{
+    color: red;
+}

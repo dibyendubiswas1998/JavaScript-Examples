@@ -1,0 +1,40 @@
+.mainContainer{
+    height: 350px;
+    width: 650px;
+    background: linear-gradient(rgb(4, 89, 247), rgb(255, 0, 212));
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.heading{
+    height: 50px;
+    width: 100%;
+}
+.heading h1{
+    text-align: center;
+    padding-top: 10px;
+    text-shadow: 2px 2px 2px #ff0000;
+}
+.timeing{
+    margin-top: 45px;
+    margin-left: 182px;
+}
+.timeing span{
+    font-size: 45px;
+    padding-left: 20px;
+}
+.buttons{
+    margin-top: 90px;
+    margin-left: 15px;
+}
+.buttons button{
+    margin-left: 80px;
+    height: 31px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: aqua;
+}

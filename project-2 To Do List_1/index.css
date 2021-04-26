@@ -1,0 +1,127 @@
+
+#main_div{
+    height: 580px;
+    width: 94%;
+    background-color: rgb(247, 221, 183);
+    margin: 20px auto;
+}
+.div_tags h1{
+    text-align: center;
+    padding-top: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-control{
+    position: relative;
+    float: left;
+    margin-left: 22px;
+    margin-top: 30px;
+}
+.form-control input{
+    height: 26px;
+    width: 250px;
+    outline: none;
+    border: 2px solid rgb(24, 1, 129);
+    border-radius: 5px;
+}
+.form-control small{
+    position: absolute;
+    left: 7px;
+    top: 34px;
+    color: red;
+    visibility: hidden;
+}
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.success input{
+    border-color:rgb(24, 1, 129);
+}
+::-webkit-input-placeholder {    
+    font-size: 14px;
+}
+.div_element input:focus{
+    border-color: rgb(9, 98, 1);
+}
+.form-control select{
+    height: 30px;
+    width: 250px;
+    outline: none;
+    border: 2px solid rgb(24, 1, 129);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-control.error select{
+    border: 2px solid red;
+}
+.div_element select:focus{
+    border-color: rgb(9, 98, 1);
+}
+.form-control button{
+    height: 30px;
+    width: 107px;
+    margin-left: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(160, 62, 252);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.div_element button:hover{
+    background-color: rgb(212, 2, 167);
+}
+.element_list{
+    position: relative;
+    margin-top: 90px;
+    margin-left: 60px;
+    height: 410px;
+    overflow-y: scroll;
+}
+.element_list ul{
+    width: 95%;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.element_list li{
+    text-align: left;
+    list-style: none;
+    padding: 10px 15px;
+    background-color: #fff;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    border-radius: 3px;
+    transition: .4s;
+    max-width: 95%;
+    max-height: auto;
+}
+.element_list li:hover{
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+.element_list span{
+    margin-left: 20px;
+}
+#checkbox{
+    float: left;
+    margin-left: 10px;    
+    cursor: pointer;
+}
+#list i{
+    float: right;
+    opacity: 30%;
+}
+#list i:hover{
+    opacity: 100%;
+    color: red;
+}
+.checked{
+    text-decoration: line-through !important;
+    color: red;
+    background: #e0e0e0 !important;
+}

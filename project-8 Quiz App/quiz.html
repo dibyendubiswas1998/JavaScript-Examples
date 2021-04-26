@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css"/>
+</head>
+<body>
+    <div id="mainContainer">
+        <div class="div1">
+            <div class="number">
+                <span id="Qno">Questions: 1/5</span>
+                <span style="padding-left: 110px;" id="answ"></span>
+            </div>
+            <div class="timer">
+                <span id="time">05:00</span>
+            </div>
+        </div>
+        <!--Q1-->
+        <div class="qu qu1">
+            <div class="question Q1">
+                <h3>1. Inside which HTML element do we put the JavaScript ?</h3>
+            </div>
+            <div class="answers 1 answers1">
+                <span>scripting</span>
+            </div>
+            <div class="answers 2 answers1">
+                <span>js</span>
+            </div>
+            <div class="answers 3 answers1">
+                <span>script</span>
+            </div>
+            <div class="answers 4 answers1">
+                <span>javaScript</span>
+            </div>
+            <button type="button" class="next" id="next1">Next</button>
+        </div>
+        <!--Q2-->
+        <div class="qu qu2">
+            <div class="question Q2">
+                <h3>2. Where is the correct place to insert a JavaScript ?</h3>
+            </div>
+            <div class="answers 1 answers2">
+                <span>head section</span>
+            </div>
+            <div class="answers 2 answers2">
+                <span>body section</span>
+            </div>
+            <div class="answers 3 answers2">
+                <span>script section</span>
+            </div>
+            <div class="answers 4 answers2">
+                <span>all above</span>
+            </div>
+            <button type="button" class="previous" id="previous2">Previous</button>
+            <button type="button" class="next" id="next2">Next</button>
+        </div>
+        <!--Q3-->
+        <div class="qu qu3">
+            <div class="question Q3">
+                <h3>3. What is the correct syntax for referring to an external script called "abc.js" ?</h3>
+            </div>
+            <div class="answers 1 answers3">
+                <span>script href='abc.js'</span>
+            </div>
+            <div class="answers 2 answers3">
+                <span>script link='abc.js'</span>
+            </div>
+            <div class="answers 3 answers3">
+                <span>script src='abc.js'</span>
+            </div>
+            <div class="answers 4 answers3">
+                <span>script url='abc.js'</span>
+            </div>
+            <button type="button" class="previous" id="previous3">Previous</button>
+            <button type="button" class="next" id="next3">Next</button>
+        </div>
+        <!--Q4-->
+        <div class="qu qu4">
+            <div class="question Q4">
+                <h3>4. The external JavaScript file must contain the script tag ?</h3>
+            </div>
+            <div class="answers 1 answers4">
+                <span>True</span>
+            </div>
+            <div class="answers 2 answers4">
+                <span>False</span>
+            </div>
+            <div class="answers 3 answers4">
+                <span>None</span>
+            </div>
+            <div class="answers 4 answers4">
+                <span>All above</span>
+            </div>
+            <button type="button" class="previous" id="previous4">Previous</button>
+            <button type="button" class="next" id="next4">Next</button>
+        </div>
+        <!--Q5-->
+        <div class="qu qu5">
+            <div class="question Q5">
+                <h3>5. How do you write "Hello World" in an alert box ?</h3>
+            </div>
+            <div class="answers 1 answers5">
+                <span>msg("Hello Wrold")</span>
+            </div>
+            <div class="answers 2 answers5">
+                <span>alert("Hello Wrold")</span>
+            </div>
+            <div class="answers 3 answers5">
+                <span>msgBox("Hello Wrold")</span>
+            </div>
+            <div class="answers 4 answers5">
+                <span>alertBox("Hello Wrold")</span>
+            </div>
+            <button type="button" class="previous" id="previous5">Previous</button>
+            <button type="button" class="next" id="next5">Next</button>
+        </div>
+       <!--Check Out-->
+       <div class="qu checkQ">
+            <div class="text">
+                <h1>Hello, <br><span id="uname" style="color: rgb(253, 4, 4); font-size: 50px;"></span></h1>
+                <p>Are You Want To Submit Your Answers</p>
+            </div>
+            <button type="button" class="checkb" id="checkb">Check All</button>
+            <button type="button" class="submitb" id="submitb">Submit</button>
+            <script>
+                const nm = window.localStorage.getItem('name') ;
+                document.getElementById('uname').textContent = nm;
+            </script>
+       </div>
+        
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

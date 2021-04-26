@@ -1,0 +1,115 @@
+#main_container{
+    height: 590px;
+    width: 96%;
+    background-color: aqua;
+    margin: 10px auto;
+    position: relative;
+}
+.tag_name{
+    height: 80px;
+    width: auto;
+}
+.tag_name h1{
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 5px 6px  #5e5b5b;
+}
+.upload_img{
+    height: 430px;
+    width: 60%;
+    background-color: rgb(207, 206, 204);
+    margin: 0px 255px;
+}
+.uploadImg{
+    margin-left: 254.5px;
+    margin-top: 2px;
+}
+.filter{
+    height: 392px;
+    width: 200px;
+    background-color: rgb(197, 196, 195);
+    position: absolute;
+    top: 97px;
+    left: 30px;
+    border-radius: 5px;
+}
+.filter h3{
+    text-align: center;
+}
+.fbutton{
+    margin-top: 39px;
+    margin-left: 30px;
+}
+.bname{
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.inc, .dec{
+    height: 25px;
+    cursor: pointer;
+    background-color: rgb(2, 68, 252);
+    border: none;
+    outline: none;
+    color: white;
+}
+.inc:hover, .dec:hover{
+    background-color: darkorchid;
+}
+.fremove{
+    width: 135px;
+    height: 37px;
+    border: none;
+    outline: none;
+    background-color: rgb(252, 1, 55);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fremove:hover{
+    background-color: blueviolet;
+}
+.effects{
+    height: 392px;
+    width: 200px;
+    background-color: rgb(197, 196, 195);
+    position: absolute;
+    top: 97px;
+    right: 30px;
+    border-radius: 5px;
+}
+.effects h3{
+    text-align: center;
+}
+.effects button{
+    height: 25px;
+    width: 135px;
+    margin: 8px 32px;
+    border: none;
+    outline: none;
+    background-color: rgb(2, 68, 252);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.effects button:hover{
+    background-color: blueviolet;
+}
+.download{
+    position: absolute;
+    left: 255px;
+    bottom: 25px;
+    height: 25px;
+    width: 135px;
+    background-color: rgb(252, 1, 55);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.download:hover{
+    background-color: blueviolet;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div id="main_container">
+        <div class="tag_name">
+            <h1>Image Filter</h1>
+        </div>
+        <canvas class="upload_img" id="canvas"></canvas>
+        <input type="file" name="file" id="uploadImg" class="uploadImg">
+        <div class="filter">
+            <h3>Filters</h3>
+            <div class="fbutton">
+                <button type="button" class="efb BrightnessDec dec">-</button><button class="bname">Brightness</button><button type="button" class="efb BrightnessAdd inc">+</button>
+            </div>
+            <div class="fbutton">
+                <button type="button" class="efb ContrastDec dec">-</button><button class="bname">Contrast</button><button type="button" class="efb ContrastInc inc">+</button>
+            </div>
+            <div class="fbutton">
+                <button type="button" class="efb SaturationDec dec">-</button><button class="bname">Saturation</button><button type="button" class="efb SaturationInc inc">+</button>
+            </div>
+            <div class="fbutton">
+                <button type="button" class="efb VibranceDec dec">-</button><button class="bname">Vibrance</button><button type="button" class="efb VibranceInc inc">+</button>
+            </div>
+            <div class="fbutton">
+                <button type="button" name="remove" id="remove" class="efb fremove">Remove All Filters and Effects</button>
+            </div>
+        </div>
+        <div class="effects">
+            <h3>Effects</h3>
+            <button type="button" class="efb Vintage">Vintage</button>
+            <button type="button" class="efb Lomo">Lomo</button>
+            <button type="button" class="efb CrosProcess">Cross Process</button>
+            <button type="button" class="efb Pinhole">Pinhole</button>
+            <button type="button" class="efb Clarity">Clarity</button>
+            <button type="button" class="efb SinCity">Sin City</button>
+            <button type="button" class="efb Nostalgia">Nostalgia</button>
+            <button type="button" class="efb HerMajesty">Her Majesty</button>
+        </div>
+        <button type="button" class="efb download" id="download">Download Image</button>
+    </div>
+    <script src="index.js"></script>
+    <script src="Camn.js"></script>
+</body>
+</html>

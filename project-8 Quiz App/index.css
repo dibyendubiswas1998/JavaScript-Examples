@@ -1,0 +1,75 @@
+@import"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css";
+
+.register{
+    height: 370px;
+    width: 550px;
+    background: linear-gradient(rgb(247, 111, 213), rgb(3, 240, 248));
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 2px 10px 18px rgb(0, 0, 0);
+}
+.register h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.inpSegment{
+    margin-left: 60px;
+    margin-top: 55px;
+    position: relative;
+}
+.inpSegment input{
+    height: 30px;
+    width: 84%;
+    padding-left: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.inpSegment input:focus{
+    border: 2px solid green;
+}
+.inpSegment i{
+    position: absolute;
+    right: 70px;
+    top: 9px;
+    color: red;
+    visibility: hidden;
+}
+.inpSegment span{
+    position: absolute;
+    left: 8px;
+    top: 37px;
+    visibility: hidden;
+}
+.register button{
+    margin-top: 50px;
+    margin-left: 60px;
+    height: 33px;
+    width: 77%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 5px 8px rgb(80, 79, 79);
+}
+.register button:hover{
+    background-color: #FC07D3;
+}
+.inpSegment.error span{
+    visibility: visible;
+}
+.inpSegment.error i{
+    visibility: visible;
+}
+
+.inpSegment.success span{
+    visibility: hidden;
+}
+.inpSegment.success i{
+    visibility: hidden;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Quiz App</title>
+    <link rel="stylesheet" href="quiz.css"/>
+</head>
+<body>
+    <div id="mainContainer">
+        <div class="div1">
+            <div class="number">
+                <span style="font-size:30px; top:5px; color: red;">Your Score</span>
+            </div>
+        </div>
+        <div class="qu subSec">
+            <div class="text" style="margin-top: 50px;">
+                <h1> Hello, <br><span id="uname" style="color: rgb(253, 4, 4); font-size: 50px;"></span></h1>
+                <p id="uemail" style="color:red;"></p>
+                <p>Time : <span id="time"></span></p>
+                <p style="font-size: 23px;">Score : <span id="score" style="color: rgb(30, 168, 3);"></span> </p>
+                <p>Status :<span id="status" style="color: rgb(30, 168, 3);"></span></p>
+                <script>
+                    document.getElementById('uname').textContent = window.localStorage.getItem('name');
+                    document.getElementById('uemail').textContent = window.localStorage.getItem('email');
+
+                    const Score = [
+                        {
+                            'ans1': '3',
+                            'ans2': '2',
+                            'ans3': '3',
+                            'ans4': '1',
+                            'ans5': '2',
+                        }
+                    ]
+                    var Rrr = [];
+                    var c=0;
+                    // 1
+                    if(window.localStorage.getItem('ans1') === Score[0]['ans1']){
+                        Rrr.push('True');
+                    }else{
+                        Rrr.push("False");
+                    }
+                    // 2
+                    if(window.localStorage.getItem('ans2') === Score[0]['ans2']){
+                        Rrr.push('True');
+                    }else{
+                        Rrr.push("False");
+                    }
+                    // 3
+                    if(window.localStorage.getItem('ans3') === Score[0]['ans3']){
+                        Rrr.push('True');
+                    }else{
+                        Rrr.push("False");
+                    }
+                    // 4
+                    if(window.localStorage.getItem('ans4') === Score[0]['ans4']){
+                        Rrr.push('True');
+                    }else{
+                        Rrr.push("False");
+                    }
+                    // 5
+                    if(window.localStorage.getItem('ans5') === Score[0]['ans5']){
+                        Rrr.push('True');
+                    }else{
+                        Rrr.push("False");
+                    }
+                    for(var i=0; i<Rrr.length; i++){
+                        if(Rrr[i] === 'True'){
+                            c++;
+                        }
+                    }
+                    var result = c*5;
+                    var timer = ((300 - window.localStorage.getItem('timer'))/60).toFixed(2);
+                    var min = timer.toString().split('.')[0];
+                    var sec = timer.toString().split('.')[1];
+                    document.getElementById('score').innerText = result + '/25';
+                    if(result === 25){
+                        document.getElementById('status').innerText =" Excellent";
+                        document.getElementById('time').innerText = "0" + min + ' min ' + sec + ' sec';
+                    }else if(result >= 20){
+                        document.getElementById('time').innerText = "0" + min + ' min ' + sec + ' sec';
+                        document.getElementById('status').innerText =" Very Good";
+                    }else if(result >= 15){
+                        document.getElementById('time').innerText = "0" + min + ' min ' + sec + ' sec';
+                        document.getElementById('status').innerText =" Good";
+                    }else{
+                        document.getElementById('time').innerText = "0" + min + ' min ' + sec + ' sec';
+                        document.getElementById('status').innerText =" Failed!";
+                    }
+                </script>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
